@@ -21,6 +21,7 @@ export class ConfigService {
       this.envConfig = {
         PORT: process.env.PORT,
         MONGODB_URI: process.env.MONGODB_URI,
+        JWT_SERCRET: process.env.JWT_SERCRET,
       };
     }
   }

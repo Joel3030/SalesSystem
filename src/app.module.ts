@@ -11,6 +11,8 @@ import { SupplierModule } from './supplier/supplier.module';
 import { ConfigModule } from '@nestjs/config';
 import { ConfigService } from './config/config.service';
 import { Configuration } from './config/configuration.keys';
+import { AuthModule } from './auth/auth.module';
+import { UserModule } from './user/user.module';
 
 @Module({
   imports: [
@@ -27,6 +29,8 @@ import { Configuration } from './config/configuration.keys';
     EmployeeModule,
     ProductModule,
     SupplierModule,
+    AuthModule,
+    UserModule,
   ],
   controllers: [AppController],
   providers: [AppService],
